@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About | Sean Harvey Orga - Automation & Tech Specialist</title>
+  
+  <link rel="icon" type="image/png" href="C:\Users\User\Desktop\Portfolio items\Gemini_Generated_Image_ifmqzlifmqzlifmq-removebg-preview.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.45);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    }
+    .glass-panel-interactive {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-panel-interactive:hover {
+      background: rgba(30, 41, 59, 0.55);
+      border-color: rgba(99, 102, 241, 0.4);
+      box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-[#080c14] text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden relative min-h-screen">
+
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-32 -right-32 w-96 h-96 sm:w-[550px] sm:h-[550px] bg-indigo-600/15 rounded-full blur-[120px]"></div>
+    <div class="absolute top-[40%] -left-32 w-80 h-80 sm:w-[500px] sm:h-[500px] bg-emerald-500/10 rounded-full blur-[140px]"></div>
+    <div class="absolute bottom-10 right-[15%] w-96 h-96 sm:w-[600px] sm:h-[600px] bg-sky-500/10 rounded-full blur-[150px]"></div>
+  </div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#080c14]/75 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-mono font-bold text-lg text-white tracking-tight flex items-center gap-2">
+        <span class="text-indigo-400 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]">&lt;/&gt;</span> dev.sean
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="index.html" class="hover:text-white transition duration-200">Home</a>
+        <a href="about.html" class="text-white font-semibold drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">About</a>
+        <a href="index.html#skills" class="hover:text-white transition duration-200">Skills</a>
+        <a href="index.html#projects" class="hover:text-white transition duration-200">Projects</a>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="index.html#contact" class="px-4 py-2 text-xs font-semibold rounded-lg bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all duration-200 shadow-[0_4px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_6px_25px_rgba(99,102,241,0.5)] border border-indigo-400/30">
+          Let's Connect
+        </a>
+      </div>
+
+      <button 
+        id="aboutMobileBtn" 
+        type="button" 
+        class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-indigo-500"
+        aria-label="Toggle navigation menu"
+      >
+        <svg id="aboutMenuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="aboutCloseIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="aboutMobileMenu" class="hidden md:hidden px-6 pt-3 pb-6 bg-[#080c14]/95 backdrop-blur-2xl border-b border-white/10 space-y-3">
+      <a href="index.html" class="block py-2 text-sm font-medium text-slate-400 hover:text-white">Home</a>
+      <a href="about.html" class="block py-2 text-sm font-semibold text-white">About</a>
+      <a href="index.html#skills" class="block py-2 text-sm font-medium text-slate-400 hover:text-white">Skills</a>
+      <a href="index.html#projects" class="block py-2 text-sm font-medium text-slate-400 hover:text-white">Projects</a>
+      <div class="pt-2">
+        <a href="index.html#contact" class="block text-center w-full py-2.5 px-4 text-xs font-semibold rounded-lg bg-indigo-600/90 text-white border border-indigo-400/30">
+          Let's Connect
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-28 sm:pt-32 pb-16 sm:pb-24">
+    <section class="px-4 sm:px-6 max-w-6xl mx-auto mb-16 sm:mb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-xs sm:max-w-sm flex flex-col items-center">
+            <div class="relative group w-full">
+              <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 to-sky-500 opacity-20 blur-xl group-hover:opacity-40 transition duration-500"></div>
+              <img 
+                src="C:\Users\User\Desktop\Portfolio items\Untitled design (68).png" 
+                alt="Sean Harvey Orga" 
+                class="relative w-full h-auto object-cover rounded-3xl border border-white/10 shadow-2xl"
+              />
+            </div>
+            
+            <div class="w-full mt-3 px-2 flex items-center justify-between text-xs font-mono text-slate-400">
+              <span>Sean Harvey Orga</span>
+              <span class="inline-flex items-center gap-1.5 text-[11px] text-emerald-400 font-mono">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Online / Remote
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-mono backdrop-blur-md shadow-[0_2px_15px_rgba(99,102,241,0.15)]">
+            <span>👋 Background & Core Philosophy</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Building systems that run smoothly, so businesses can <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-400">scale seamlessly</span>.
+          </h1>
+
+          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+            I am a tech and automation specialist dedicated to solving operational inefficiencies. My focus sits at the intersection of <strong class="text-slate-200">advanced marketing automation</strong>, <strong class="text-slate-200">intelligent AI workflows</strong>, and <strong class="text-slate-200">polished creative assets</strong>.
+          </p>
+
+          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+            Rather than just writing isolated code or setting up surface-level funnels, I engineer interconnected ecosystems—integrating CRM architectures like GoHighLevel with Canva visual design assets, video production, and cutting-edge LLMs to turn complex manual tasks into self-running pipelines.
+          </p>
+
+          <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-white/5">
+            <div>
+              <p class="text-lg sm:text-2xl font-extrabold text-white font-mono">100%</p>
+              <p class="text-[10px] sm:text-xs text-slate-500">Uptime & Reliability</p>
+            </div>
+            <div>
+              <p class="text-lg sm:text-2xl font-extrabold text-white font-mono">End-to-End</p>
+              <p class="text-[10px] sm:text-xs text-slate-500">Pipeline Wiring</p>
+            </div>
+            <div>
+              <p class="text-lg sm:text-2xl font-extrabold text-white font-mono">AI-First</p>
+              <p class="text-[10px] sm:text-xs text-slate-500">Smart Automation</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-14 sm:py-16 px-4 sm:px-6 bg-slate-950/40 border-y border-white/5 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2">Remote Infrastructure & Uptime</h2>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-3">Workstation & Power Redundancy</h3>
+          <p class="text-xs sm:text-sm text-slate-400">
+            Equipped with dedicated processing hardware and off-grid solar power backup to guarantee zero downtime and uninterrupted project delivery.
+          </p>
+        </div>
+
+        <div class="mb-6 sm:mb-8 p-5 sm:p-6 rounded-3xl glass-panel border border-emerald-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-mono text-lg sm:text-xl flex-shrink-0 shadow-[0_0_15px_rgba(52,211,153,0.2)] border border-emerald-500/30">
+              ⚡
+            </div>
+            <div>
+              <h4 class="text-sm sm:text-base font-bold text-white flex flex-wrap items-center gap-2">
+                Solar-Powered Backup Source
+                <span class="text-[9px] sm:text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">0% Downtime</span>
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">
+                Integrated solar power bank ensures continuous operational power during grid outages—no delays or interruptions guaranteed.
+              </p>
+            </div>
+          </div>
+          <div class="font-mono text-xs text-emerald-400 font-semibold px-3.5 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 whitespace-nowrap self-stretch md:self-auto text-center shadow-[0_0_10px_rgba(52,211,153,0.1)]">
+            ● 24/7 Power Ready
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
+          <div class="p-4 sm:p-5 rounded-2xl glass-panel-interactive">
+            <span class="text-[10px] sm:text-xs font-mono text-indigo-400 block mb-1">PROCESSOR (CPU)</span>
+            <p class="font-bold text-white text-xs sm:text-sm">AMD Ryzen 5 3550H</p>
+            <p class="text-[11px] sm:text-xs text-slate-400 mt-1">4 Cores, 8 Threads @ 2.10 GHz with Vega Gfx</p>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-2xl glass-panel-interactive">
+            <span class="text-[10px] sm:text-xs font-mono text-indigo-400 block mb-1">GRAPHICS (GPU)</span>
+            <p class="font-bold text-white text-xs sm:text-sm">NVIDIA GeForce GTX 1650</p>
+            <p class="text-[11px] sm:text-xs text-slate-400 mt-1">4 GB Dedicated VRAM + AMD Vega 8</p>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-2xl glass-panel-interactive">
+            <span class="text-[10px] sm:text-xs font-mono text-indigo-400 block mb-1">MEMORY (RAM)</span>
+            <p class="font-bold text-white text-xs sm:text-sm">16.0 GB DDR4</p>
+            <p class="text-[11px] sm:text-xs text-slate-400 mt-1">High-bandwidth multitasking for CRM & render</p>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-2xl glass-panel-interactive">
+            <span class="text-[10px] sm:text-xs font-mono text-indigo-400 block mb-1">STORAGE & OS</span>
+            <p class="font-bold text-white text-xs sm:text-sm">1.14 TB Fast Storage</p>
+            <p class="text-[11px] sm:text-xs text-slate-400 mt-1">64-bit Architecture, x64-based Processing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 sm:py-16 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-400 mb-2 text-center">How I Operate</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white text-center mb-8 sm:mb-12">Core Principles</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          <div class="p-5 sm:p-6 rounded-3xl glass-panel-interactive">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-400 flex items-center justify-center font-mono font-bold mb-3 sm:mb-4 text-sm sm:text-base shadow-[0_0_10px_rgba(99,102,241,0.2)]">01</div>
+            <h4 class="text-base sm:text-lg font-bold text-white mb-2">Automate Redundant Processes</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">If a workflow requires manual routing or status updating, it should be wired through automated triggers and pipeline logic.</p>
+          </div>
+
+          <div class="p-5 sm:p-6 rounded-3xl glass-panel-interactive">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 text-sky-400 flex items-center justify-center font-mono font-bold mb-3 sm:mb-4 text-sm sm:text-base shadow-[0_0_10px_rgba(56,189,248,0.2)]">02</div>
+            <h4 class="text-base sm:text-lg font-bold text-white mb-2">Practical AI Integration</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Leveraging Large Language Models and AI utilities not as gimmicks, but as functional layers to qualify leads and speed up operations.</p>
+          </div>
+
+          <div class="p-5 sm:p-6 rounded-3xl glass-panel-interactive">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center font-mono font-bold mb-3 sm:mb-4 text-sm sm:text-base shadow-[0_0_10px_rgba(52,211,153,0.2)]">03</div>
+            <h4 class="text-base sm:text-lg font-bold text-white mb-2">High-Impact Visual Assets</h4>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Pairing back-end automations with clean Canva visuals and engaging video assets to ensure funnels convert visitors into active clients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 sm:pt-10 px-4 sm:px-6 max-w-4xl mx-auto text-center">
+      <div class="p-6 sm:p-12 rounded-3xl glass-panel shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+        <h3 class="text-xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Ready to automate and optimize your workflows?</h3>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mb-6 sm:mb-8">
+          Whether you need complete CRM pipeline architecture, high-impact Canva brand assets, or digital media production, let's build something efficient.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <a href="index.html#contact" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-indigo-600/90 hover:bg-indigo-500 text-white font-semibold text-sm transition shadow-[0_4px_20px_rgba(99,102,241,0.4)] border border-indigo-400/30">
+            Get in Touch
+          </a>
+          <a href="index.html#projects" class="w-full sm:w-auto px-6 py-3 rounded-xl glass-panel text-slate-300 hover:text-white font-semibold text-sm transition hover:border-white/20">
+            View Past Projects
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative z-10 py-8 px-4 text-center text-xs font-mono text-slate-500 border-t border-white/5 bg-[#080c14]/80 backdrop-blur-md">
+    <p>© 2026 dev.sean — Built with precision & clean code.</p>
+  </footer>
+
+  <script>
+    const aboutBtn = document.getElementById('aboutMobileBtn');
+    const aboutMenu = document.getElementById('aboutMobileMenu');
+    const aboutMenuIcon = document.getElementById('aboutMenuIcon');
+    const aboutCloseIcon = document.getElementById('aboutCloseIcon');
+
+    aboutBtn.addEventListener('click', () => {
+      const isHidden = aboutMenu.classList.contains('hidden');
+      if (isHidden) {
+        aboutMenu.classList.remove('hidden');
+        aboutMenuIcon.classList.add('hidden');
+        aboutCloseIcon.classList.remove('hidden');
+      } else {
+        aboutMenu.classList.add('hidden');
+        aboutMenuIcon.classList.remove('hidden');
+        aboutCloseIcon.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
